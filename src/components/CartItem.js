@@ -24,7 +24,7 @@ function CartItem(props) {
             </button>
             <p className='amount'>{amount}</p>
             <button className='amount-btn' onClick={() => {
-                if( amount == 1){
+                if( amount === 1){
                     dispatch(removeItem(id))
                     return;
                 }
